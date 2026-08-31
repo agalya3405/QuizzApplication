@@ -40,6 +40,9 @@ public class QuestionService {
     existingQuestion.setOption3(updatedQuestion.getOption3());
     existingQuestion.setOption4(updatedQuestion.getOption4());
     existingQuestion.setRightAnswer(updatedQuestion.getRightAnswer());
+     
+existingQuestion.setCategory(updatedQuestion.getCategory());
+existingQuestion.setDifficulty(updatedQuestion.getDifficulty());
 
     return questionRepository.save(existingQuestion);
 }
@@ -47,6 +50,9 @@ public class QuestionService {
     public Question addQuestion(Question question) {
         return questionRepository.save(question);
     }
+    public List<Question> addQuestions(List<Question> questions) {
+    return questionRepository.saveAll(questions);
+}
 
     public QuestionDTO convertToDTO(Question question) {
 

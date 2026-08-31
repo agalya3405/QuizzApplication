@@ -32,6 +32,10 @@ public class QuizController {
     public Question addQuestion(@RequestBody Question question) {
         return questionService.addQuestion(question);
     }
+    @PostMapping("/questions/bulk")
+public List<Question> addQuestions(@RequestBody List<Question> questions) {
+    return questionService.addQuestions(questions);
+}
 
  @PostMapping("/quiz/submit")
 public ResultDTO submitQuiz(@RequestBody List<AnswerDTO> answers) {
