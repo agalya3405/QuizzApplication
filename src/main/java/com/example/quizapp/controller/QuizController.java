@@ -24,9 +24,15 @@ public class QuizController {
     }
 
     @GetMapping("/quiz")
-    public List<QuestionDTO> getQuizQuestions() {
-        return questionService.getQuizQuestions();
-    }
+public List<QuestionDTO> getQuizQuestions(
+        @RequestParam String category,
+        @RequestParam String difficulty) {
+
+    return questionService.getQuizQuestions(
+            category,
+            difficulty
+    );
+}
 
     @PostMapping("/questions")
     public Question addQuestion(@RequestBody Question question) {

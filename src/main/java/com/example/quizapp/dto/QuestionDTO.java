@@ -8,6 +8,8 @@ public class QuestionDTO {
     private String option2;
     private String option3;
     private String option4;
+    private String category;
+private String difficulty;
 
     public QuestionDTO() {
     }
@@ -59,4 +61,19 @@ public class QuestionDTO {
     public void setOption4(String option4) {
         this.option4 = option4;
     }
+    public String getCategory() {
+    return category;
+}
+
+public void setCategory(String category) {
+    this.category = category;
+}
+
+public String getDifficulty() {
+    return difficulty;
+}
+
+public void setDifficulty(String difficulty) {
+    this.difficulty = difficulty;
+}
 }

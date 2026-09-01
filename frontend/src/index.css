@@ -1,37 +1,122 @@
+/* ====== ROOT & GLOBAL STYLES ====== */
+
 :root {
-  font-family: Inter, 'Segoe UI', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #111827;
-  background: #f3f6ff;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-bg: #f3f6ff;
+  --color-white: #ffffff;
+  --color-border: #e5e7eb;
+  --color-error: #dc2626;
+  --color-success: #10b981;
+  --color-primary: #667eea;
+  --color-secondary: #764ba2;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html, body, #root {
+  width: 100%;
   margin: 0;
-  min-height: 100%;
+  padding: 0;
+  height: 100%;
   min-height: 100vh;
 }
 
 body {
-  min-height: 100vh;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+/* ====== TYPOGRAPHY ====== */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+/* ====== FORM ELEMENTS ====== */
 
 button,
 input,
 textarea,
 select {
   font: inherit;
+  font-family: var(--font-family);
 }
 
-h1, h2, p {
-  margin-top: 0;
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ====== SCROLLBAR STYLING ====== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ====== UTILITY CLASSES ====== */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ====== ACCESSIBILITY ====== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ====== FOCUS STYLES ====== */
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 

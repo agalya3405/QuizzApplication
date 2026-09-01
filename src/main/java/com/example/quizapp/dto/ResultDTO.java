@@ -49,3 +49,5 @@ public class ResultDTO {
         this.score = score;
     }
 }
+
+

@@ -64,6 +64,8 @@ existingQuestion.setDifficulty(updatedQuestion.getDifficulty());
         dto.setOption2(question.getOption2());
         dto.setOption3(question.getOption3());
         dto.setOption4(question.getOption4());
+        dto.setCategory(question.getCategory());
+dto.setDifficulty(question.getDifficulty());
 
         return dto;
     }
@@ -105,6 +107,21 @@ public ResultDTO calculateScore(List<AnswerDTO> answers) {
 }
 public void deleteQuestion(Integer id) {
     questionRepository.deleteById(id);
+}
+
+public List<QuestionDTO> getQuizQuestions(
+        String category,
+        String difficulty) {
+
+    List<Question> questions =
+            questionRepository.findByCategoryAndDifficulty(
+                    category,
+                    difficulty
+            );
+
+    return questions.stream()
+            .map(this::convertToDTO)
+            .toList();
 }
 
 }

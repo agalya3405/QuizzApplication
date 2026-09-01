@@ -1,0 +1,1002 @@
+[
+  {
+    "question": "Which keyword is used for inheritance in Java?",
+    "option1": "extends",
+    "option2": "implements",
+    "option3": "inherits",
+    "option4": "super",
+    "rightAnswer": "extends",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the default value of a boolean variable in Java?",
+    "option1": "true",
+    "option2": "false",
+    "option3": "null",
+    "option4": "0",
+    "rightAnswer": "false",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which of the following is NOT a primitive data type in Java?",
+    "option1": "int",
+    "option2": "double",
+    "option3": "String",
+    "option4": "boolean",
+    "rightAnswer": "String",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does JVM stand for?",
+    "option1": "Java Virtual Machine",
+    "option2": "Java Verification Method",
+    "option3": "Java Version Manager",
+    "option4": "Just Very Minimal",
+    "rightAnswer": "Java Virtual Machine",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which keyword is used to create a constant in Java?",
+    "option1": "constant",
+    "option2": "final",
+    "option3": "static",
+    "option4": "immutable",
+    "rightAnswer": "final",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the size of an int variable in Java?",
+    "option1": "2 bytes",
+    "option2": "4 bytes",
+    "option3": "8 bytes",
+    "option4": "1 byte",
+    "rightAnswer": "4 bytes",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which access modifier makes a member accessible only within the same package?",
+    "option1": "private",
+    "option2": "protected",
+    "option3": "public",
+    "option4": "default",
+    "rightAnswer": "default",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the output of 5 + 2.5 in Java?",
+    "option1": "7",
+    "option2": "7.5",
+    "option3": "8",
+    "option4": "7.0",
+    "rightAnswer": "7.5",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which method is used to convert a String to an integer in Java?",
+    "option1": "toInteger()",
+    "option2": "parseInt()",
+    "option3": "convertToInt()",
+    "option4": "stringToInt()",
+    "rightAnswer": "parseInt()",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the purpose of the 'super' keyword in Java?",
+    "option1": "To create a new object",
+    "option2": "To access parent class methods and constructors",
+    "option3": "To define static methods",
+    "option4": "To implement an interface",
+    "rightAnswer": "To access parent class methods and constructors",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which of the following is true about an abstract class in Java?",
+    "option1": "It can be instantiated directly",
+    "option2": "It cannot have abstract methods",
+    "option3": "It can contain concrete methods and abstract methods",
+    "option4": "It must have only abstract methods",
+    "rightAnswer": "It can contain concrete methods and abstract methods",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the difference between '==' and 'equals()' in Java?",
+    "option1": "They are identical",
+    "option2": "== compares references, equals() compares content",
+    "option3": "== compares content, equals() compares references",
+    "option4": "equals() is used only for integers",
+    "rightAnswer": "== compares references, equals() compares content",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which collection class is synchronized in Java?",
+    "option1": "ArrayList",
+    "option2": "HashMap",
+    "option3": "Vector",
+    "option4": "HashSet",
+    "rightAnswer": "Vector",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a lambda expression in Java?",
+    "option1": "A type of loop",
+    "option2": "An anonymous function",
+    "option3": "A method to create threads",
+    "option4": "A way to define constants",
+    "rightAnswer": "An anonymous function",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which exception is thrown when an array is accessed with an invalid index?",
+    "option1": "NullPointerException",
+    "option2": "ArrayIndexOutOfBoundsException",
+    "option3": "IndexOutOfBoundsException",
+    "option4": "ArrayException",
+    "rightAnswer": "ArrayIndexOutOfBoundsException",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does the 'throws' keyword do in Java?",
+    "option1": "It catches exceptions",
+    "option2": "It declares that a method may throw an exception",
+    "option3": "It creates a new exception",
+    "option4": "It ignores exceptions",
+    "rightAnswer": "It declares that a method may throw an exception",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "In which order are the constructors called in inheritance?",
+    "option1": "Child constructor first, then parent",
+    "option2": "Parent constructor first, then child",
+    "option3": "They are called simultaneously",
+    "option4": "Only child constructor is called",
+    "rightAnswer": "Parent constructor first, then child",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the purpose of the 'volatile' keyword in Java?",
+    "option1": "To make a variable constant",
+    "option2": "To indicate that a variable may be modified by multiple threads",
+    "option3": "To create an array",
+    "option4": "To define a method",
+    "rightAnswer": "To indicate that a variable may be modified by multiple threads",
+    "category": "Java",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the difference between 'interface' and 'abstract class'?",
+    "option1": "Interface can have state, abstract class cannot",
+    "option2": "Abstract class can have constructors, interface cannot",
+    "option3": "Both are identical",
+    "option4": "Interface can have multiple implementations, abstract class cannot",
+    "rightAnswer": "Abstract class can have constructors, interface cannot",
+    "category": "Java",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which sorting algorithm has the best average case time complexity?",
+    "option1": "Bubble Sort",
+    "option2": "Quick Sort",
+    "option3": "Selection Sort",
+    "option4": "Insertion Sort",
+    "rightAnswer": "Quick Sort",
+    "category": "Java",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is method overloading in Java?",
+    "option1": "When a method calls itself",
+    "option2": "When multiple methods have the same name but different parameters",
+    "option3": "When a parent and child have methods with the same name",
+    "option4": "When a method takes too many parameters",
+    "rightAnswer": "When multiple methods have the same name but different parameters",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the purpose of the 'synchronized' keyword?",
+    "option1": "To make a method run faster",
+    "option2": "To provide thread safety by allowing only one thread at a time",
+    "option3": "To create multiple threads",
+    "option4": "To catch exceptions",
+    "rightAnswer": "To provide thread safety by allowing only one thread at a time",
+    "category": "Java",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What does the 'instanceof' operator do?",
+    "option1": "Creates a new object",
+    "option2": "Checks if an object is an instance of a class or interface",
+    "option3": "Compares two objects",
+    "option4": "Converts an object type",
+    "rightAnswer": "Checks if an object is an instance of a class or interface",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the output of System.out.println(10/3) in Java?",
+    "option1": "3.33",
+    "option2": "3.333333",
+    "option3": "3",
+    "option4": "3.0",
+    "rightAnswer": "3",
+    "category": "Java",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which Java feature allows a class to implement multiple interfaces?",
+    "option1": "Inheritance",
+    "option2": "Polymorphism",
+    "option3": "Interface implementation",
+    "option4": "Encapsulation",
+    "rightAnswer": "Interface implementation",
+    "category": "Java",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a marker interface in Java?",
+    "option1": "An interface with one method",
+    "option2": "An interface with no methods",
+    "option3": "An interface with only abstract methods",
+    "option4": "An interface used for marking specific behaviors",
+    "rightAnswer": "An interface with no methods",
+    "category": "Java",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which Spring annotation is used to mark a class as a service?",
+    "option1": "@Component",
+    "option2": "@Service",
+    "option3": "@Repository",
+    "option4": "@Controller",
+    "rightAnswer": "@Service",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does @Autowired annotation do in Spring?",
+    "option1": "Creates a new bean",
+    "option2": "Automatically injects dependencies",
+    "option3": "Marks a class as a service",
+    "option4": "Configures the database",
+    "rightAnswer": "Automatically injects dependencies",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which annotation is used to define a REST endpoint in Spring Boot?",
+    "option1": "@RestController",
+    "option2": "@Service",
+    "option3": "@Entity",
+    "option4": "@Repository",
+    "rightAnswer": "@RestController",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is Spring dependency injection?",
+    "option1": "Injecting SQL queries",
+    "option2": "Automatically providing object dependencies",
+    "option3": "Creating multiple instances of a class",
+    "option4": "Managing database connections",
+    "rightAnswer": "Automatically providing object dependencies",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which annotation maps an HTTP GET request to a method?",
+    "option1": "@GetMapping",
+    "option2": "@RequestMapping",
+    "option3": "@PostMapping",
+    "option4": "@RequestMethod",
+    "rightAnswer": "@GetMapping",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does @RequestBody annotation do?",
+    "option1": "Sends a response body",
+    "option2": "Binds request body to a method parameter",
+    "option3": "Creates a new request",
+    "option4": "Validates the request",
+    "rightAnswer": "Binds request body to a method parameter",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a bean in Spring?",
+    "option1": "A SQL query result",
+    "option2": "An object managed by the Spring container",
+    "option3": "A configuration file",
+    "option4": "A type of exception",
+    "rightAnswer": "An object managed by the Spring container",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which scope creates a new bean instance for each request?",
+    "option1": "Singleton",
+    "option2": "Prototype",
+    "option3": "Request",
+    "option4": "Session",
+    "rightAnswer": "Request",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does @Transactional annotation do?",
+    "option1": "Maps HTTP requests",
+    "option2": "Manages database transactions",
+    "option3": "Injects dependencies",
+    "option4": "Creates REST endpoints",
+    "rightAnswer": "Manages database transactions",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which Spring Data interface provides CRUD operations?",
+    "option1": "JpaRepository",
+    "option2": "Service",
+    "option3": "Controller",
+    "option4": "Entity",
+    "rightAnswer": "JpaRepository",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the purpose of application.properties file?",
+    "option1": "To define beans",
+    "option2": "To configure application settings",
+    "option3": "To define REST endpoints",
+    "option4": "To create entities",
+    "rightAnswer": "To configure application settings",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which annotation creates a REST endpoint for HTTP POST?",
+    "option1": "@PostMapping",
+    "option2": "@GetMapping",
+    "option3": "@PutMapping",
+    "option4": "@RequestMapping",
+    "rightAnswer": "@PostMapping",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does @PathVariable annotation do?",
+    "option1": "Binds query parameters",
+    "option2": "Binds URL path variables to method parameters",
+    "option3": "Sends a response",
+    "option4": "Creates a bean",
+    "rightAnswer": "Binds URL path variables to method parameters",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a RestTemplate in Spring Boot?",
+    "option1": "A template for REST APIs",
+    "option2": "A client for making HTTP requests",
+    "option3": "A configuration file",
+    "option4": "A type of annotation",
+    "rightAnswer": "A client for making HTTP requests",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which annotation is used to handle cross-origin requests?",
+    "option1": "@CrossOrigin",
+    "option2": "@CORS",
+    "option3": "@RequestMapping",
+    "option4": "@RestController",
+    "rightAnswer": "@CrossOrigin",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the default bean scope in Spring?",
+    "option1": "Prototype",
+    "option2": "Singleton",
+    "option3": "Request",
+    "option4": "Session",
+    "rightAnswer": "Singleton",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which HTTP method is used to update a resource?",
+    "option1": "GET",
+    "option2": "POST",
+    "option3": "PUT",
+    "option4": "DELETE",
+    "rightAnswer": "PUT",
+    "category": "Spring Boot",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the use of @EnableWebMvc annotation?",
+    "option1": "Enables database connections",
+    "option2": "Enables Spring MVC for web applications",
+    "option3": "Creates REST endpoints",
+    "option4": "Manages transactions",
+    "rightAnswer": "Enables Spring MVC for web applications",
+    "category": "Spring Boot",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which SQL command is used to add new rows to a table?",
+    "option1": "UPDATE",
+    "option2": "INSERT",
+    "option3": "SELECT",
+    "option4": "DELETE",
+    "rightAnswer": "INSERT",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does the SELECT * statement do?",
+    "option1": "Selects all columns from a table",
+    "option2": "Selects only the primary key",
+    "option3": "Selects all rows from all tables",
+    "option4": "Selects specific rows",
+    "rightAnswer": "Selects all columns from a table",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which SQL keyword is used to sort results in descending order?",
+    "option1": "SORT",
+    "option2": "DESC",
+    "option3": "ORDER",
+    "option4": "REVERSE",
+    "rightAnswer": "DESC",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the purpose of the WHERE clause in SQL?",
+    "option1": "To sort data",
+    "option2": "To filter rows based on conditions",
+    "option3": "To group data",
+    "option4": "To join tables",
+    "rightAnswer": "To filter rows based on conditions",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which SQL function returns the number of rows?",
+    "option1": "SUM()",
+    "option2": "COUNT()",
+    "option3": "MAX()",
+    "option4": "AVG()",
+    "rightAnswer": "COUNT()",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does DISTINCT keyword do in SQL?",
+    "option1": "Removes duplicate rows",
+    "option2": "Counts rows",
+    "option3": "Sorts rows",
+    "option4": "Filters rows",
+    "rightAnswer": "Removes duplicate rows",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which SQL clause is used to group rows?",
+    "option1": "WHERE",
+    "option2": "GROUP BY",
+    "option3": "ORDER BY",
+    "option4": "HAVING",
+    "rightAnswer": "GROUP BY",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+    "option1": "INNER JOIN returns all rows, LEFT JOIN returns matching rows",
+    "option2": "INNER JOIN returns matching rows, LEFT JOIN returns all rows from left table",
+    "option3": "They are identical",
+    "option4": "LEFT JOIN is always faster",
+    "rightAnswer": "INNER JOIN returns matching rows, LEFT JOIN returns all rows from left table",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which SQL function returns the highest value?",
+    "option1": "MIN()",
+    "option2": "MAX()",
+    "option3": "TOP()",
+    "option4": "HIGHEST()",
+    "rightAnswer": "MAX()",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does the UPDATE statement do?",
+    "option1": "Adds new rows",
+    "option2": "Modifies existing rows",
+    "option3": "Deletes rows",
+    "option4": "Creates tables",
+    "rightAnswer": "Modifies existing rows",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which SQL keyword deletes rows from a table?",
+    "option1": "REMOVE",
+    "option2": "DROP",
+    "option3": "DELETE",
+    "option4": "TRUNCATE",
+    "rightAnswer": "DELETE",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a primary key in SQL?",
+    "option1": "A column that stores unique identifiers",
+    "option2": "A column that stores foreign keys",
+    "option3": "A column that stores null values",
+    "option4": "A column that stores duplicate values",
+    "rightAnswer": "A column that stores unique identifiers",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which SQL statement is used to delete a table?",
+    "option1": "DELETE TABLE",
+    "option2": "REMOVE TABLE",
+    "option3": "DROP TABLE",
+    "option4": "TRUNCATE TABLE",
+    "rightAnswer": "DROP TABLE",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does HAVING clause do in SQL?",
+    "option1": "Filters rows before grouping",
+    "option2": "Filters rows after grouping",
+    "option3": "Sorts rows",
+    "option4": "Joins tables",
+    "rightAnswer": "Filters rows after grouping",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which SQL keyword creates a new table?",
+    "option1": "NEW TABLE",
+    "option2": "CREATE TABLE",
+    "option3": "INSERT TABLE",
+    "option4": "ADD TABLE",
+    "rightAnswer": "CREATE TABLE",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a foreign key in SQL?",
+    "option1": "A primary key from another table",
+    "option2": "A column that references a primary key in another table",
+    "option3": "A unique column in a table",
+    "option4": "A column with null values",
+    "rightAnswer": "A column that references a primary key in another table",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which SQL wildcard matches any single character?",
+    "option1": "%",
+    "option2": "_",
+    "option3": "*",
+    "option4": "?",
+    "rightAnswer": "_",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is normalization in SQL?",
+    "option1": "Creating duplicate data",
+    "option2": "Organizing data to reduce redundancy",
+    "option3": "Adding more tables",
+    "option4": "Deleting unnecessary columns",
+    "rightAnswer": "Organizing data to reduce redundancy",
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which data structure uses LIFO (Last In First Out)?",
+    "option1": "Queue",
+    "option2": "Stack",
+    "option3": "Array",
+    "option4": "Linked List",
+    "rightAnswer": "Stack",
+    "category": "Data Structures",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a linked list?",
+    "option1": "A collection of linked objects stored in memory",
+    "option2": "A fixed-size collection",
+    "option3": "A sorted collection",
+    "option4": "A collection with only integers",
+    "rightAnswer": "A collection of linked objects stored in memory",
+    "category": "Data Structures",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which data structure uses FIFO (First In First Out)?",
+    "option1": "Stack",
+    "option2": "Queue",
+    "option3": "Array",
+    "option4": "Tree",
+    "rightAnswer": "Queue",
+    "category": "Data Structures",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the time complexity of binary search?",
+    "option1": "O(n)",
+    "option2": "O(log n)",
+    "option3": "O(n^2)",
+    "option4": "O(1)",
+    "rightAnswer": "O(log n)",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a hash table?",
+    "option1": "A table with hash marks",
+    "option2": "A data structure that implements an associative array",
+    "option3": "A type of database",
+    "option4": "A sorting algorithm",
+    "rightAnswer": "A data structure that implements an associative array",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the time complexity of inserting an element in a linked list at the beginning?",
+    "option1": "O(n)",
+    "option2": "O(n^2)",
+    "option3": "O(log n)",
+    "option4": "O(1)",
+    "rightAnswer": "O(1)",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a binary search tree?",
+    "option1": "A tree where each node has at most 2 children",
+    "option2": "A tree with binary values",
+    "option3": "A tree used for searching strings",
+    "option4": "A tree with sorted nodes",
+    "rightAnswer": "A tree where each node has at most 2 children",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which of the following is a non-linear data structure?",
+    "option1": "Array",
+    "option2": "Linked List",
+    "option3": "Tree",
+    "option4": "Stack",
+    "rightAnswer": "Tree",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is graph traversal?",
+    "option1": "Moving through all nodes in a graph",
+    "option2": "Deleting nodes from a graph",
+    "option3": "Sorting a graph",
+    "option4": "Creating a new graph",
+    "rightAnswer": "Moving through all nodes in a graph",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in an array by index?",
+    "option1": "O(n)",
+    "option2": "O(log n)",
+    "option3": "O(1)",
+    "option4": "O(n^2)",
+    "rightAnswer": "O(1)",
+    "category": "Data Structures",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a heap?",
+    "option1": "A random collection of data",
+    "option2": "A specialized tree-based data structure",
+    "option3": "A type of sorting algorithm",
+    "option4": "A memory location for garbage collection",
+    "rightAnswer": "A specialized tree-based data structure",
+    "category": "Data Structures",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the time complexity of searching an element in an unsorted array?",
+    "option1": "O(1)",
+    "option2": "O(log n)",
+    "option3": "O(n)",
+    "option4": "O(n^2)",
+    "rightAnswer": "O(n)",
+    "category": "Data Structures",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which traversal visits nodes in breadth-first manner?",
+    "option1": "Depth-First Search",
+    "option2": "Breadth-First Search",
+    "option3": "In-order traversal",
+    "option4": "Pre-order traversal",
+    "rightAnswer": "Breadth-First Search",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a trie data structure?",
+    "option1": "A type of sorting algorithm",
+    "option2": "A tree-based structure for efficient string storage and retrieval",
+    "option3": "A graph-based structure",
+    "option4": "A hash table variant",
+    "rightAnswer": "A tree-based structure for efficient string storage and retrieval",
+    "category": "Data Structures",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the difference between a stack and a queue?",
+    "option1": "Stack uses FIFO, queue uses LIFO",
+    "option2": "Stack uses LIFO, queue uses FIFO",
+    "option3": "They are identical",
+    "option4": "Stack is faster than queue",
+    "rightAnswer": "Stack uses LIFO, queue uses FIFO",
+    "category": "Data Structures",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a circular linked list?",
+    "option1": "A linked list where the last node points to the first node",
+    "option2": "A linked list with circular references",
+    "option3": "A linked list used for circular queues only",
+    "option4": "A linked list with duplicate nodes",
+    "rightAnswer": "A linked list where the last node points to the first node",
+    "category": "Data Structures",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which data structure is best for implementing a cache?",
+    "option1": "Array",
+    "option2": "Hash Table",
+    "option3": "Stack",
+    "option4": "Tree",
+    "rightAnswer": "Hash Table",
+    "category": "Data Structures",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the space complexity of a binary search tree?",
+    "option1": "O(1)",
+    "option2": "O(n)",
+    "option3": "O(log n)",
+    "option4": "O(n^2)",
+    "rightAnswer": "O(n)",
+    "category": "Data Structures",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is an algorithm?",
+    "option1": "A computer program",
+    "option2": "A step-by-step procedure to solve a problem",
+    "option3": "A type of data structure",
+    "option4": "A programming language",
+    "rightAnswer": "A step-by-step procedure to solve a problem",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does API stand for?",
+    "option1": "Application Programming Interface",
+    "option2": "Advanced Programming Implementation",
+    "option3": "Application Process Integration",
+    "option4": "Advanced Program Interface",
+    "rightAnswer": "Application Programming Interface",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the difference between stack and heap memory?",
+    "option1": "Stack is slower than heap",
+    "option2": "Stack stores primitives, heap stores objects",
+    "option3": "Heap is faster than stack",
+    "option4": "They store the same type of data",
+    "rightAnswer": "Stack stores primitives, heap stores objects",
+    "category": "General",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does HTTP stand for?",
+    "option1": "HyperText Transfer Protocol",
+    "option2": "High Transfer Technology Protocol",
+    "option3": "Home Text Transfer Protocol",
+    "option4": "Hyperlink Transfer Protocol",
+    "rightAnswer": "HyperText Transfer Protocol",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is RESTful API?",
+    "option1": "An API that uses REST principles for web services",
+    "option2": "An API that stores data in REST format",
+    "option3": "An API that only handles GET requests",
+    "option4": "An API that requires authentication",
+    "rightAnswer": "An API that uses REST principles for web services",
+    "category": "General",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the purpose of version control?",
+    "option1": "To store large files",
+    "option2": "To track changes in code over time",
+    "option3": "To compile code",
+    "option4": "To test applications",
+    "rightAnswer": "To track changes in code over time",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is Git?",
+    "option1": "A programming language",
+    "option2": "A version control system",
+    "option3": "A database",
+    "option4": "A web framework",
+    "rightAnswer": "A version control system",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does JSON stand for?",
+    "option1": "Java Standard Object Notation",
+    "option2": "JavaScript Object Notation",
+    "option3": "Java Syntax Object Network",
+    "option4": "JavaScript Open Network",
+    "rightAnswer": "JavaScript Object Notation",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is object-oriented programming?",
+    "option1": "Programming using only functions",
+    "option2": "Programming using objects and classes",
+    "option3": "Programming using only variables",
+    "option4": "Programming without using classes",
+    "rightAnswer": "Programming using objects and classes",
+    "category": "General",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does CRUD stand for?",
+    "option1": "Create, Read, Update, Delete",
+    "option2": "Code, Run, Update, Debug",
+    "option3": "Copy, Replicate, Update, Delete",
+    "option4": "Create, Run, Upload, Deploy",
+    "rightAnswer": "Create, Read, Update, Delete",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a database index?",
+    "option1": "A list of all tables",
+    "option2": "A data structure that improves query performance",
+    "option3": "A backup of the database",
+    "option4": "A type of column",
+    "rightAnswer": "A data structure that improves query performance",
+    "category": "General",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does IDE stand for?",
+    "option1": "Integrated Development Environment",
+    "option2": "Internal Device Engine",
+    "option3": "Internet Development Extension",
+    "option4": "Integrated Debug Engine",
+    "rightAnswer": "Integrated Development Environment",
+    "category": "General",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is refactoring in programming?",
+    "option1": "Changing the code functionality",
+    "option2": "Restructuring code without changing its functionality",
+    "option3": "Adding new features",
+    "option4": "Fixing all bugs",
+    "rightAnswer": "Restructuring code without changing its functionality",
+    "category": "General",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a deadlock in concurrent programming?",
+    "option1": "A situation where two threads wait indefinitely",
+    "option2": "A thread that is blocked",
+    "option3": "An exception in threading",
+    "option4": "A type of loop",
+    "rightAnswer": "A situation where two threads wait indefinitely",
+    "category": "General",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is unit testing?",
+    "option1": "Testing entire applications",
+    "option2": "Testing individual components or units of code",
+    "option3": "Testing without writing code",
+    "option4": "Testing only databases",
+    "rightAnswer": "Testing individual components or units of code",
+    "category": "General",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the difference between @Component and @Service in Spring?",
+    "option1": "They are identical",
+    "option2": "@Service is used for business logic, @Component is generic",
+    "option3": "@Component is faster than @Service",
+    "option4": "@Service is only for databases",
+    "rightAnswer": "@Service is used for business logic, @Component is generic",
+    "category": "Spring Boot",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the purpose of @ConfigurationProperties in Spring Boot?",
+    "option1": "To define beans",
+    "option2": "To bind external configuration to Java objects",
+    "option3": "To create REST endpoints",
+    "option4": "To manage transactions",
+    "rightAnswer": "To bind external configuration to Java objects",
+    "category": "Spring Boot",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the difference between TRUNCATE and DELETE in SQL?",
+    "option1": "They are identical",
+    "option2": "TRUNCATE is faster and can't be rolled back, DELETE can be",
+    "option3": "DELETE is faster than TRUNCATE",
+    "option4": "TRUNCATE only works on primary keys",
+    "rightAnswer": "TRUNCATE is faster and can't be rolled back, DELETE can be",
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is a constraint in SQL?",
+    "option1": "A type of query",
+    "option2": "A rule applied to table columns",
+    "option3": "A sorting mechanism",
+    "option4": "A type of function",
+    "rightAnswer": "A rule applied to table columns",
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the time complexity of merge sort?",
+    "option1": "O(n)",
+    "option2": "O(n log n)",
+    "option3": "O(n^2)",
+    "option4": "O(log n)",
+    "rightAnswer": "O(n log n)",
+    "category": "Data Structures",
+    "difficulty": "Hard"
+  }
+]
