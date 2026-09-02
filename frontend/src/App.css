@@ -376,6 +376,81 @@
   background: #ef4444;
 }
 
+.review-section {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.review-title {
+  margin: 0 0 16px;
+  color: #111827;
+  font-size: 1.35rem;
+}
+
+.review-list {
+  display: grid;
+  gap: 12px;
+}
+
+.review-item {
+  padding: 16px;
+  border: 2px solid #e5e7eb;
+  border-left-width: 5px;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.review-item.correct {
+  border-left-color: #16a34a;
+}
+
+.review-item.wrong {
+  border-left-color: #dc2626;
+}
+
+.review-question,
+.review-answer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.review-question {
+  color: #374151;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.review-question strong {
+  color: #166534;
+}
+
+.review-item.wrong .review-question strong {
+  color: #991b1b;
+}
+
+.review-item p {
+  margin: 12px 0;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.review-answer {
+  align-items: baseline;
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.review-answer strong {
+  color: #1f2937;
+  text-align: right;
+}
+
+.correct-answer strong {
+  color: #166534;
+}
+
 /* ====== BUTTONS ====== */
 
 .actions {
@@ -566,7 +641,6 @@
   .result-number {
     font-size: 1.6rem;
   }
-}
 }
 
 .status-text,

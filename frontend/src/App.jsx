@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 const API_BASE_URL = 'http://localhost:8080'
@@ -24,6 +24,7 @@ function App() {
 
   // Results state
   const [result, setResult] = useState(null)
+  const [showReview, setShowReview] = useState(false)
 
   const currentQuestion = questions[currentIndex]
   const currentSelectedAnswer = currentQuestion
@@ -114,6 +115,7 @@ function App() {
 
       const data = await response.json()
       setResult(data)
+      setShowReview(false)
       setScreen('results')
     } catch (err) {
       setError(err.message || 'Could not submit quiz results.')
@@ -145,6 +147,7 @@ function App() {
     setCurrentIndex(0)
     setSelectedAnswers({})
     setResult(null)
+    setShowReview(false)
     setError('')
   }
 
@@ -153,6 +156,7 @@ function App() {
     setCurrentIndex(0)
     setSelectedAnswers({})
     setResult(null)
+    setShowReview(false)
     setError('')
     setScreen('quiz')
   }
@@ -388,6 +392,49 @@ function App() {
               }}
             ></div>
           </div>
+
+          {/* Answer Review */}
+          {Array.isArray(result.review) && result.review.length > 0 && (
+            <>
+              <button
+                type="button"
+                className="secondary-button review-toggle-button"
+                onClick={() => setShowReview((visible) => !visible)}
+              >
+                {showReview ? 'Hide Answers' : 'Review Answers'}
+              </button>
+
+              {showReview && (
+                <section className="review-section">
+                  <h2 className="review-title">Answer Review</h2>
+                  <div className="review-list">
+                    {result.review.map((item, index) => (
+                      <article
+                        className={`review-item ${item.correct ? 'correct' : 'wrong'}`}
+                        key={item.questionId || index}
+                      >
+                        <div className="review-question">
+                          <span>Question {index + 1}</span>
+                          <strong>{item.correct ? 'Correct' : 'Incorrect'}</strong>
+                        </div>
+                        <p>{item.question}</p>
+                        <div className="review-answer">
+                          <span>Your answer</span>
+                          <strong>{item.yourAnswer || 'No answer'}</strong>
+                        </div>
+                        {!item.correct && (
+                          <div className="review-answer correct-answer">
+                            <span>Correct answer</span>
+                            <strong>{item.correctAnswer}</strong>
+                          </div>
+                        )}
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </>
+          )}
 
           {/* Action Buttons */}
           <div className="actions results-actions">

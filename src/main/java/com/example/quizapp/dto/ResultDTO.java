@@ -1,20 +1,25 @@
 package com.example.quizapp.dto;
 
+import java.util.List;
+
 public class ResultDTO {
 
     private int totalQuestions;
     private int correctAnswers;
     private int wrongAnswers;
     private int score;
+    private List<ReviewDTO> review;
 
     public ResultDTO() {
     }
 
-    public ResultDTO(int totalQuestions, int correctAnswers, int wrongAnswers, int score) {
+    public ResultDTO(int totalQuestions, int correctAnswers, int wrongAnswers,
+                      int score, List<ReviewDTO> review) {
         this.totalQuestions = totalQuestions;
         this.correctAnswers = correctAnswers;
         this.wrongAnswers = wrongAnswers;
         this.score = score;
+        this.review = review;
     }
 
     public int getTotalQuestions() {
@@ -48,6 +53,12 @@ public class ResultDTO {
     public void setScore(int score) {
         this.score = score;
     }
+
+    public List<ReviewDTO> getReview() {
+        return review;
+    }
+
+    public void setReview(List<ReviewDTO> review) {
+        this.review = review;
+    }
 }
-
-

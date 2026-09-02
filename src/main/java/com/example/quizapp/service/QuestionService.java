@@ -7,6 +7,8 @@ import com.example.quizapp.model.Question;
 import com.example.quizapp.repository.QuestionRepository;
 import org.springframework.stereotype.Service;
 
+import com.example.quizapp.dto.ReviewDTO;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -82,6 +84,7 @@ public ResultDTO calculateScore(List<AnswerDTO> answers) {
 
     int totalQuestions = answers.size();
     int correctAnswers = 0;
+    List<ReviewDTO> reviewList = new ArrayList<>();
 
     for (AnswerDTO answer : answers) {
 
@@ -89,11 +92,26 @@ public ResultDTO calculateScore(List<AnswerDTO> answers) {
                 .findById(answer.getQuestionId())
                 .orElse(null);
 
-        if (question != null &&
-            question.getRightAnswer().equals(answer.getAnswer())) {
+        if (question == null) {
+            continue;
+        }
 
+        boolean isCorrect = question.getRightAnswer().equals(answer.getAnswer());
+        if (isCorrect) {
             correctAnswers++;
         }
+
+        reviewList.add(new ReviewDTO(
+                question.getId(),
+                question.getQuestion(),
+                question.getOption1(),
+                question.getOption2(),
+                question.getOption3(),
+                question.getOption4(),
+                answer.getAnswer(),
+                question.getRightAnswer(),
+                isCorrect
+        ));
     }
 
     int wrongAnswers = totalQuestions - correctAnswers;
@@ -102,7 +120,8 @@ public ResultDTO calculateScore(List<AnswerDTO> answers) {
             totalQuestions,
             correctAnswers,
             wrongAnswers,
-            correctAnswers
+            correctAnswers,
+            reviewList
     );
 }
 public void deleteQuestion(Integer id) {
