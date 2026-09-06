@@ -5,6 +5,8 @@ import com.example.quizapp.dto.QuestionDTO;
 import com.example.quizapp.dto.ResultDTO;
 import com.example.quizapp.model.Question;
 import com.example.quizapp.service.QuestionService;
+import com.example.quizapp.service.QuizAttemptService;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,11 +14,16 @@ import java.util.List;
 @RestController
 public class QuizController {
 
-    private final QuestionService questionService;
+   private final QuestionService questionService;
+private final QuizAttemptService quizAttemptService;
 
-    public QuizController(QuestionService questionService) {
-        this.questionService = questionService;
-    }
+public QuizController(
+        QuestionService questionService,
+        QuizAttemptService quizAttemptService) {
+
+    this.questionService = questionService;
+    this.quizAttemptService = quizAttemptService;
+}
 
     @GetMapping("/questions")
     public List<Question> getAllQuestions() {
