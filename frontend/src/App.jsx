@@ -25,6 +25,30 @@ function App() {
   // Results state
   const [result, setResult] = useState(null)
   const [showReview, setShowReview] = useState(false)
+  const [attempts, setAttempts] = useState([])
+
+  // Load quiz history
+  const handleViewHistory = async () => {
+    setLoading(true)
+    setError('')
+
+    try {
+      const response = await fetch(`${API_BASE_URL}/attempts`)
+
+      if (!response.ok) {
+        throw new Error('Failed to load quiz history.')
+      }
+
+      const data = await response.json()
+
+      setAttempts(data)
+      setScreen('history')
+    } catch (err) {
+      setError(err.message || 'Could not load quiz history.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const currentQuestion = questions[currentIndex]
   const currentSelectedAnswer = currentQuestion
@@ -85,44 +109,51 @@ function App() {
   }
 
   // Submit the quiz and get results
-  const submitQuiz = async () => {
-    const answers = questions.map((question) => ({
-      questionId: question.id,
-      answer: selectedAnswers[question.id] || '',
-    }))
+  // Submit the quiz and get results
+const submitQuiz = async () => {
+  const answers = questions.map((question) => ({
+    questionId: question.id,
+    answer: selectedAnswers[question.id] || '',
+  }))
 
-    // Validate that all questions are answered
-    if (answers.some((answer) => !answer.answer)) {
-      setError('Please answer all questions before submitting.')
-      return
-    }
+  // Validate that all questions are answered
+  if (answers.some((answer) => !answer.answer)) {
+    setError('Please answer all questions before submitting.')
+    return
+  }
 
-    setLoading(true)
-    setError('')
+  setLoading(true)
+  setError('')
 
-    try {
-      const response = await fetch(`${API_BASE_URL}/quiz/submit`, {
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/quiz/submit?category=${encodeURIComponent(
+        selectedCategory
+      )}&difficulty=${encodeURIComponent(selectedDifficulty)}`,
+      {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(answers),
-      })
-
-      if (!response.ok) {
-        throw new Error('Unable to submit the quiz.')
       }
+    )
 
-      const data = await response.json()
-      setResult(data)
-      setShowReview(false)
-      setScreen('results')
-    } catch (err) {
-      setError(err.message || 'Could not submit quiz results.')
-    } finally {
-      setLoading(false)
+    if (!response.ok) {
+      throw new Error('Unable to submit the quiz.')
     }
+
+    const data = await response.json()
+
+    setResult(data)
+    setShowReview(false)
+    setScreen('results')
+  } catch (err) {
+    setError(err.message || 'Could not submit quiz results.')
+  } finally {
+    setLoading(false)
   }
+}
 
   // Handle Next button
   const handleNext = () => {
@@ -231,6 +262,75 @@ function App() {
               disabled={loading || !selectedCategory || !selectedDifficulty}
             >
               {loading ? 'Loading...' : 'Start Quiz'}
+            </button>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={handleViewHistory}
+              disabled={loading}
+            >
+              View Quiz History
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // RENDER: HISTORY SCREEN
+  if (screen === 'history') {
+    return (
+      <div className="quiz-shell">
+        <div className="quiz-card">
+          <div className="home-header">
+            <h1 className="app-title">Quiz History</h1>
+            <p className="app-tagline">Review your previous quiz attempts</p>
+          </div>
+
+          {loading && <p className="status-text">Loading history...</p>}
+          {error && <p className="error-text">{error}</p>}
+
+          {!loading && !error && attempts.length === 0 && (
+            <p className="status-text">No quiz attempts yet.</p>
+          )}
+
+          {!loading && attempts.length > 0 && (
+            <div className="review-list">
+              {attempts.map((attempt) => (
+                <article className="review-item" key={attempt.id}>
+                  <div className="review-question">
+                    <span>{attempt.category} - {attempt.difficulty}</span>
+                    <strong>
+                      {attempt.totalQuestions > 0
+                        ? Math.round(
+                            (attempt.correctAnswers / attempt.totalQuestions) * 100
+                          )
+                        : 0}%
+                    </strong>
+                  </div>
+                  <p>
+                    {attempt.correctAnswers} correct of {attempt.totalQuestions} questions
+                  </p>
+                  <div className="review-answer">
+                    <span>Completed</span>
+                    <strong>
+                      {attempt.completedAt
+                        ? new Date(attempt.completedAt).toLocaleString()
+                        : 'Date unavailable'}
+                    </strong>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
+
+          <div className="actions">
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={handleBackToHome}
+            >
+              Back to Home
             </button>
           </div>
         </div>

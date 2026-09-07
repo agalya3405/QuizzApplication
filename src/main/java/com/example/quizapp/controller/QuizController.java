@@ -31,7 +31,7 @@ public QuizController(
     }
 
     @GetMapping("/quiz")
-public List<QuestionDTO> getQuizQuestions(
+         public List<QuestionDTO> getQuizQuestions(
         @RequestParam String category,
         @RequestParam String difficulty) {
 
@@ -51,8 +51,23 @@ public List<Question> addQuestions(@RequestBody List<Question> questions) {
 }
 
  @PostMapping("/quiz/submit")
-public ResultDTO submitQuiz(@RequestBody List<AnswerDTO> answers) {
-    return questionService.calculateScore(answers);
+public ResultDTO submitQuiz(
+        @RequestParam String category,
+        @RequestParam String difficulty,
+        @RequestBody List<AnswerDTO> answers) {
+
+    ResultDTO result = questionService.calculateScore(answers);
+
+    quizAttemptService.saveQuizResult(
+            category,
+            difficulty,
+            result.getTotalQuestions(),
+            result.getCorrectAnswers(),
+            result.getWrongAnswers(),
+            result.getScore()
+    );
+
+    return result;
 }
 
 @GetMapping("/questions/{id}")
@@ -71,3 +86,9 @@ public void deleteQuestion(@PathVariable Integer id) {
     questionService.deleteQuestion(id);
 }
 }
+
+
+
+ 
+
+
