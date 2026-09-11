@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import Login from './components/Login'
+import Register from './components/Register'
 
 const API_BASE_URL = 'http://localhost:8080'
 
@@ -10,6 +12,8 @@ const DIFFICULTIES = ['Easy', 'Medium', 'Hard']
 function App() {
   // Screen state
   const [screen, setScreen] = useState('home') // 'home', 'quiz', 'results'
+  const [loggedInUser, setLoggedInUser] = useState(null)
+  const [showRegister, setShowRegister] = useState(false)
   
   // Home screen state
   const [selectedCategory, setSelectedCategory] = useState('')
@@ -202,6 +206,24 @@ const submitQuiz = async () => {
     if (percentage >= 60) return 'Great job! Keep practicing! 💪'
     if (percentage >= 40) return 'Good effort! Keep learning! 📚'
     return 'Keep practicing! You will improve! 💡'
+  }
+
+  if (!loggedInUser) {
+    if (showRegister) {
+      return (
+        <Register
+          onRegister={(user) => setLoggedInUser(user)}
+          onShowLogin={() => setShowRegister(false)}
+        />
+      )
+    }
+
+    return (
+      <Login
+        onLogin={(user) => setLoggedInUser(user)}
+        onShowRegister={() => setShowRegister(true)}
+      />
+    )
   }
 
   // RENDER: HOME SCREEN

@@ -18,6 +18,98 @@
   animation: slideIn 0.3s ease-out;
 }
 
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.24), transparent 28%),
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+  width: min(100%, 440px);
+  padding: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 25px 55px rgba(38, 25, 83, 0.24);
+  animation: slideIn 0.3s ease-out;
+}
+
+.auth-header {
+  margin-bottom: 30px;
+}
+
+.auth-kicker {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #667eea;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.auth-header h1 {
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 2.35rem;
+}
+
+.auth-header p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.auth-form {
+  display: grid;
+  gap: 10px;
+}
+
+.auth-label {
+  margin-top: 8px;
+  color: #374151;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+  color: #111827;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-input:focus {
+  border-color: #667eea;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.12);
+  outline: none;
+}
+
+.auth-submit {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.auth-link {
+  display: block;
+  margin: 22px auto 0;
+  color: #667eea;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.auth-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
 @keyframes slideIn {
   from {
     opacity: 0;
